@@ -1,5 +1,8 @@
 from django.db import models
 
+from django.utils import timezone
+import datetime
+
 # Create your models here.
 
 class Question(models.Model):
@@ -10,7 +13,7 @@ class Question(models.Model):
         return self.question_text
     
     def was_published_recently(self):
-        return self.pub_date >= timezone.now() -datetime.timedelta(days=1)
+        return timezone.now() >= self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 
 
