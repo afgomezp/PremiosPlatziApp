@@ -89,3 +89,11 @@ class QuestionDetailViewTest(TestCase):
         url = reverse("polls:detail", args=(past_question.pk,))
         response = self.client.get(url)
         self.assertContains(response, past_question.question_text)
+
+class QuestionResultsViewTest(TestCase):
+        def test_future_question_not_url(self):
+            future_question= create_question(question_text="future question", days=30)
+            url = reverse("polls:results", args=(future_question.pk,))
+            response = self.client.get(url)
+            self.assertEqual(response.status_code, 404)
+
