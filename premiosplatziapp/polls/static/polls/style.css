@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*height: 100%;*/
+    background: hsl(204, 100%, 5%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 6vw;
+    /*padding-top: 100px;*/
+
+    height: 60px;
+    font-size: 40px;
+    color: #71632d;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header, ul {
+    background: linear-gradient(
+        to right,
+        hsl(98 100% 62%),
+        hsl(204 100% 59%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    border: 1px solid white;
+    padding: 10px 0px;
+    margin: 20px 140px;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    
+  
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    width: 80%;
+    padding: 2px 0;
+}
+
+footer a {
+    margin-top: 15px;
+}
+
+
+
+@media (min-width: 450px) {
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 6vw;
+
+    height: 60px;
+    font-size: 9vw;
+    color: #71632d;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header, ul {
+    background: linear-gradient(
+        to right,
+        hsl(98 100% 62%),
+        hsl(204 100% 59%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    border: 1px solid white;
+    padding: 1vw 2vw;
+    margin-bottom: 20px;
+
+    font-size: 4vw;
+    
+  
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    width: 100vw;
+    padding: 3vw 0;
+}
+
+footer a {
+    margin-right:20px;
+    margin-bottom: 10px;
+}
+
+}
